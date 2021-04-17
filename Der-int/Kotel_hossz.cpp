@@ -53,7 +53,7 @@ int main(){
     ofstream f;
     f.open("output.txt");
     f<<len_kozeppontos<<','<<len_trapez<<','<<len_simp<<endl;
-    f<<"Megjegyzés: 4. deriváltnál nagyon kicsi érték jött ki, ezért a harmad Simpson módszer setében n-re 1 jött ki,\n"<<"amire nagyon nem volt pontos az eredmény. Emiatt ahhoz az n-et a (2*középpontos+trapéz)/3 szerint számoltam.";
+    f<<"Megjegyzés: 4. deriváltnál nagyon kicsi érték jött ki, ezért a harmad Simpson módszer esetében n-re 1 jött ki,\n"<<"amire nagyon nem volt pontos az eredmény. Emiatt ahhoz az n-et a (2*középpontos+trapéz)/3 szerint számoltam.";
     f.close();
 
 
