@@ -1,4 +1,5 @@
 import sympy
 import sys
+import matplotlib as plt
 
-print(sys.prefix==sys.base_prefix)
+
