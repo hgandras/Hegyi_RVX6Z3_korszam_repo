@@ -1,3 +1,0 @@
-205.226,205.529,205.352
-Megjegyzés: 4. deriváltnál nagyon kicsi érték jött ki, ezért a harmad Simpson módszer esetében n-re 1 jött ki,
-amire nagyon nem volt pontos az eredmény. Emiatt ahhoz az n-et a (2*középpontos+trapéz)/3 szerint számoltam.
