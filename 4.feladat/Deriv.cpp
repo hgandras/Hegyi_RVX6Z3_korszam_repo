@@ -1,6 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include <vector>
+#include <fstream>
 
 
 using namespace std;
@@ -68,8 +69,13 @@ int main(){
     vector<double> results_N=Newton(outp,func,y0,t0,t_full,t_step);
     vector<double> results_RK=RK4(outp,func,y0,t0,t_full,t_step);
     vector<double> results_analytic=analytic(outp,t0,t_full,t_step);
+
+    ofstream f;
+    f.open("output_fel_4.txt");
+    f<<"Newton|Runge-Kutta|Analitikus"<<endl;
     for(int i=0;i<results_N.size();i++)
-        cout<<results_N[i]<<','<<results_RK[i]<<','<<results_analytic[i]<<endl;
+        f<<results_N[i]<<','<<results_RK[i]<<','<<results_analytic[i]<<endl;
+    f.close();
 
 
 
