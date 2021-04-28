@@ -14,3 +14,7 @@ vc140.pdb
 4.feladat/Deriv.ilk
 4.feladat/Deriv.pdb
 output_fel_4.txt
+.gitignore
+vc140.pdb
+Lorenz-pillangó/Lorenz.ilk
+Lorenz-pillangó/Lorenz.pdb
