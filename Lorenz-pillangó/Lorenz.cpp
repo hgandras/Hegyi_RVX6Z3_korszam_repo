@@ -8,10 +8,15 @@ using namespace std;
 int main()
 {
     
-    Lorenz pillango1(10,28,8/3,1,0.001,0,1,0);
-    Lorenz pillango2(10,28,8/3,1,0.001,1,1.1,1);
+    Lorenz pillango1(10,28,8/3,100,0.005,0,1,0);
+    Lorenz pillango2(10,28,8/3,100,0.005,0.0001,0.9999,0.0001);
     pillango1.data_export("output1.txt");
-    pillango1.Lyapunov(pillango2);
+    pillango2.data_export("output2.txt");
+    vector<double> res=pillango1.Lyapunov(pillango2);
+    for(int i=0;i<res.size();i++){
+        cout<<res[i]<<endl;
+    }
+    
 
 
     return 0;

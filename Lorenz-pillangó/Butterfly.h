@@ -52,7 +52,7 @@ class Lorenz{
         return;
     }
 
-    double Lyapunov(Lorenz params2){
+    vector<double> Lyapunov(Lorenz params2){
 
         vector<double> exponents;
 
@@ -64,10 +64,9 @@ class Lorenz{
             for (int i=0;i<vekt.size();i++){
                 exponents.push_back(log((sqrt(pow(vekt[i][0]-params2.vekt[i][0],2)+pow(vekt[i][1]-params2.vekt[i][1],2)+pow(vekt[i][2]-params2.vekt[i][2],2)))/delta_null)/t_current);
                 t_current+=t;
-                cout<<exponents[i]<<endl;
             }
         } 
-        return  accumulate(exponents.begin(),exponents.end(),0.00)/exponents.size();
+        return  exponents;
           
     }
 
