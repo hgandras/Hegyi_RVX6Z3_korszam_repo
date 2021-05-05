@@ -23,7 +23,7 @@ class Visualize:
         if self.dim==3:
             self.axs=d3.Axes3D(self.fig)
         self.data=data
-        self.lines=[self.axs.plot(dat[:,0][0],dat[:,1][0],dat[:,2][0],lw=2)[0] for count,dat in enumerate(self.data)]
+        self.lines=[self.axs.plot(dat[:,0][0],dat[:,1][0],dat[:,2][0],lw=1)[0] for count,dat in enumerate(self.data)]
         self.xdata,self.ydata,self.zdata=[[None] for h in range(len(data))],[[None] for h in range(len(data))],[[None] for h in range(len(data))]
 
 

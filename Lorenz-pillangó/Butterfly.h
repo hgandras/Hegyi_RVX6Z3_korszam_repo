@@ -61,7 +61,7 @@ class Lorenz{
         if (vekt.size()==params2.vekt.size()){
             double t_current=0;
             double delta_null=sqrt(pow(vekt[0][0]-params2.vekt[0][0],2)+pow(vekt[0][1]-params2.vekt[0][1],2)+pow(vekt[0][2]-params2.vekt[0][2],2));
-            for (int i=0;i<vekt.size();i++){
+            for (int i=1;i<vekt.size();i++){
                 exponents.push_back(log((sqrt(pow(vekt[i][0]-params2.vekt[i][0],2)+pow(vekt[i][1]-params2.vekt[i][1],2)+pow(vekt[i][2]-params2.vekt[i][2],2)))/delta_null)/t_current);
                 t_current+=t;
             }
